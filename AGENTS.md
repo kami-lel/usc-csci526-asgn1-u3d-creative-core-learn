@@ -7,7 +7,7 @@ This repo (`github.com/kami-lel/usc-csci526-asgn1-u3d-creative-core-learn`) hold
 ## Layout & Naming
 
 - `Assets/`, `Packages/`, `ProjectSettings/` at repo root: the Unity source project. `Library/`, `Temp/`, `Logs/`, `.vs/`, `obj/` stay gitignored, never committed
-- `Assets/Scenes/Cameras.unity` and `Assets/Scenes/UI.unity`: one scene per chosen unit, PascalCase to match Unity's own scene-naming convention
+- `Assets/_CreativeCoreLearn/Scenes/CamerasScene.unity` and `Assets/_CreativeCoreLearn/Scenes/UIScene.unity`: one scene per chosen unit, PascalCase with a `Scene` suffix; all authored assets live under the `Assets/_CreativeCoreLearn/` root
 - one build subfolder per unit at repo root, PascalCase, prefixed `Challenge` (`ChallengeCameras/`, `ChallengeUI/`), matching Unity's own "Challenge: ..." naming for the Playable Deliverable lesson
 - each `Challenge*/` subfolder is a complete, self-contained WebGL export: never share a `Build/` folder or `TemplateData/` between units, each export is independent
 - a root `index.html` links to both `Challenge*/` urls; this sits alongside the Unity project files, not inside `Assets/`
@@ -16,14 +16,14 @@ This repo (`github.com/kami-lel/usc-csci526-asgn1-u3d-creative-core-learn`) hold
 
 Export a unit's WebGL build (run from the Unity Editor, from this repo's own Unity project):
 
-1. open this repo as the Unity project, switch the active scene to the unit's scene (e.g. `Assets/Scenes/Cameras.unity`)
+1. open this repo as the Unity project, switch the active scene to the unit's scene (e.g. `Assets/_CreativeCoreLearn/Scenes/CamerasScene.unity`)
 2. `File > Build Settings > WebGL > Build`, output directly into this repo's matching `Challenge*/` subfolder (e.g. `ChallengeCameras/`)
 3. confirm the subfolder now contains `index.html`, `Build/`, `TemplateData/`, `StreamingAssets/` (if used)
 
 Publish (run from this repo):
 
 ```bash
-git add ChallengeCameras/ Assets/Scenes/Cameras.unity  # or whichever unit was rebuilt
+git add ChallengeCameras/ Assets/_CreativeCoreLearn/Scenes/CamerasScene.unity  # or whichever unit was rebuilt
 git commit
 git push
 ```

@@ -17,9 +17,11 @@ CSCI-526 Assignment 1 offers a choice between a Beginner Sequence and an Advance
 ```
 .
 ├── Assets/                 Unity source project: scenes, scripts, imported assets
-│   └── Scenes/
-│       ├── Cameras.unity   source scene for the Cameras Playable Deliverable
-│       └── UI.unity        source scene for the UI Playable Deliverable
+│   └── _CreativeCoreLearn/    authored-asset root
+│       ├── Scenes/
+│       │   ├── CamerasScene.unity   source scene for the Cameras Playable Deliverable
+│       │   └── UIScene.unity        source scene for the UI Playable Deliverable
+│       └── Settings/          URP assets, input actions
 ├── Packages/                Unity package manifest and lock file
 ├── ProjectSettings/         Unity project settings (versioned; Library/ and Temp/ are not)
 ├── index.html                landing page, links both builds below
