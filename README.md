@@ -1,5 +1,10 @@
 # Unity Creative Core Learn
 
+<!--
+Todo camera challenge
+Todo UI challenge
+-->
+
 Playable builds for CSCI-526 Assignment 1's *Advanced Sequence*: two Unity Creative Core units, each with a browser-playable WebGL deliverable hosted from this repository via GitHub Pages.
 
 ## Project Overview
@@ -39,7 +44,3 @@ Open the repo as a Unity project, switch the active scene to the unit being rebu
 ## Contributing
 
 This is a solo coursework submission; no external contributions expected.
-
-## License
-
-Coursework submission for CSCI-526. Not licensed for reuse.
